@@ -17,5 +17,10 @@ namespace Movie_InterfaceAPI
             WishList WishListFrm = new WishList(Main);
             WishListFrm.ShowDialog();
         }
+
+        private void WishListLb_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

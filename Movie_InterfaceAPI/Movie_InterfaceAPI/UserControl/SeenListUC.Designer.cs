@@ -44,6 +44,7 @@
             this.SeenListLb.TabIndex = 9;
             this.SeenListLb.Text = "You have seen 0 movies in this search category";
             this.SeenListLb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SeenListLb.Click += new System.EventHandler(this.SeenListLb_Click);
             // 
             // panel2
             // 

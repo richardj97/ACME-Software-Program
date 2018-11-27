@@ -17,5 +17,10 @@ namespace Movie_InterfaceAPI
             SeenList SeenListFrm = new SeenList(Main);
             SeenListFrm.ShowDialog();
         }
+
+        private void SeenListLb_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

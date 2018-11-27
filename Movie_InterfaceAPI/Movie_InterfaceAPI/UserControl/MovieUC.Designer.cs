@@ -52,6 +52,7 @@
             this.TitleLb.Size = new System.Drawing.Size(146, 55);
             this.TitleLb.TabIndex = 1;
             this.TitleLb.Text = "Title";
+            this.TitleLb.Click += new System.EventHandler(this.TitleLb_Click);
             // 
             // panel1
             // 
@@ -85,6 +86,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(244, 110);
             this.panel2.TabIndex = 6;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // MoreInfoLl
             // 
@@ -123,6 +125,7 @@
             this.PosterPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PosterPb.TabIndex = 0;
             this.PosterPb.TabStop = false;
+            this.PosterPb.Click += new System.EventHandler(this.PosterPb_Click);
             // 
             // MovieUC
             // 

@@ -68,6 +68,7 @@
             this.WishListLb.TabIndex = 9;
             this.WishListLb.Text = "There are currently 0 movies in your wish list";
             this.WishListLb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.WishListLb.Click += new System.EventHandler(this.WishListLb_Click);
             // 
             // WishListUC
             // 

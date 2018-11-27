@@ -11,13 +11,13 @@ namespace Movie_InterfaceAPI
         public WishList(Main Main)
         {
             InitializeComponent();
-            this.Main = Main;
+			this.Main = Main;
         }
         private void WishList_Load(object sender, System.EventArgs e)
         {
-            foreach (string title in Properties.Settings.Default.WishList)
+            foreach (string imdb in Properties.Settings.Default.WishList)
             {
-                string url = OMDB.imdbAddress + title + "&apikey=" + OMDB.api;
+                string url = OMDB.imdbAddress + imdb + "&apikey=" + OMDB.api;
 
                 using (WebClient wc = new WebClient())
                 {

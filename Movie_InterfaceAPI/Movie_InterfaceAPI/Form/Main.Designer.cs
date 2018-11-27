@@ -38,6 +38,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ThreadBW = new System.ComponentModel.BackgroundWorker();
             this.LoadPb = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SearchPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadPb)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +52,7 @@
             this.SearchPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SearchPanel.Controls.Add(this.SearchBtn);
             this.SearchPanel.Controls.Add(this.SearchTb);
-            this.SearchPanel.Location = new System.Drawing.Point(481, 12);
+            this.SearchPanel.Location = new System.Drawing.Point(520, 12);
             this.SearchPanel.Name = "SearchPanel";
             this.SearchPanel.Size = new System.Drawing.Size(311, 34);
             this.SearchPanel.TabIndex = 0;
@@ -97,9 +100,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MoviesFLP.AutoScroll = true;
-            this.MoviesFLP.Location = new System.Drawing.Point(12, 86);
+            this.MoviesFLP.Location = new System.Drawing.Point(12, 83);
             this.MoviesFLP.Name = "MoviesFLP";
-            this.MoviesFLP.Size = new System.Drawing.Size(780, 463);
+            this.MoviesFLP.Size = new System.Drawing.Size(819, 491);
             this.MoviesFLP.TabIndex = 2;
             // 
             // panel1
@@ -109,7 +112,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 79);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(780, 1);
+            this.panel1.Size = new System.Drawing.Size(819, 1);
             this.panel1.TabIndex = 3;
             // 
             // MultipleCb
@@ -119,7 +122,7 @@
             this.MultipleCb.Checked = true;
             this.MultipleCb.CheckState = System.Windows.Forms.CheckState.Checked;
             this.MultipleCb.ForeColor = System.Drawing.Color.White;
-            this.MultipleCb.Location = new System.Drawing.Point(693, 53);
+            this.MultipleCb.Location = new System.Drawing.Point(732, 53);
             this.MultipleCb.Name = "MultipleCb";
             this.MultipleCb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.MultipleCb.Size = new System.Drawing.Size(99, 17);
@@ -155,12 +158,38 @@
             this.LoadPb.TabStop = false;
             this.LoadPb.Visible = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.AllowDrop = true;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "OMDB",
+            "TMDB"});
+            this.comboBox1.Location = new System.Drawing.Point(597, 52);
+            this.comboBox1.MaxDropDownItems = 2;
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(107, 21);
+            this.comboBox1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.Location = new System.Drawing.Point(526, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Select API";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(27)))));
-            this.ClientSize = new System.Drawing.Size(804, 561);
+            this.ClientSize = new System.Drawing.Size(843, 586);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.LoadPb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.MultipleCb);
@@ -193,6 +222,9 @@
         private System.Windows.Forms.Label label2;
         private System.ComponentModel.BackgroundWorker ThreadBW;
         private System.Windows.Forms.PictureBox LoadPb;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

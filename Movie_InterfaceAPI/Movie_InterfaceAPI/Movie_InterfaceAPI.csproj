@@ -69,6 +69,12 @@
     <Compile Include="Form\MovieInfo.Designer.cs">
       <DependentUpon>MovieInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\MovieInfoTMDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MovieInfoTMDB.Designer.cs">
+      <DependentUpon>MovieInfoTMDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\MovieUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
